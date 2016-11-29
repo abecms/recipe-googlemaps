@@ -28,31 +28,29 @@ The data selected by the user will be saved with the document.
 The code sample :
 ```
 <div id="map"></div>
-		{{#if gmaps.0.formatted_address}}
-	    <script>
-	      function initMap() {
-	        var map = new google.maps.Map(document.getElementById('map'), {
-	          zoom: 4,
-	          center: new google.maps.LatLng(
-	          	{{gmaps.0.geometry.location.lat}},
-	          	{{gmaps.0.geometry.location.lng}}
-	          )
-	        });
-	        {{#each gmaps}}
-	        new google.maps.Marker({
-	          position: new google.maps.LatLng(
-	          	{{geometry.location.lat}},
-	          	{{geometry.location.lng}}
-	          ),
-	          map: map
-	        });
-	        {{/each}}
-	      }
-	    </script>
-	    <script async defer
-	    src="https://maps.googleapis.com/maps/api/js?key=YOURKEY&callback=initMap">
-	    </script>
-	    {{/if}}
+{{#if gmaps.0.formatted_address}}
+    <script>
+      function initMap() {
+	var map = new google.maps.Map(document.getElementById('map'), {
+	  zoom: 4,
+	  center: new google.maps.LatLng(
+		{{gmaps.0.geometry.location.lat}},
+		{{gmaps.0.geometry.location.lng}}
+	  )
+	});
+	{{#each gmaps}}
+	new google.maps.Marker({
+	  position: new google.maps.LatLng(
+		{{geometry.location.lat}},
+		{{geometry.location.lng}}
+	  ),
+	  map: map
+	});
+	{{/each}}
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOURKEY&callback=initMap"></script>
+{{/if}}
 ```
 The Gmaps code has been taken from the Google Maps site dev site. In this sample, we don't display the map if there is no record to display ({{#if gmaps.0.formatted_address}})
 Then we center the map on the first record : 
