@@ -1,6 +1,7 @@
 # Google Maps Abe Recipe
 This Abe recipe demonstrates how to add a Google Maps field to your template and display a Google Map
 
+![Screenshot](/site/screenshot.png?raw=true)
 
 # Installation
 1. git clone https://github.com/Abejs/recipe-googlemaps.git
