@@ -1,0 +1,265 @@
+{
+  "selectTemplate": [
+    "index"
+  ],
+  "name": "demo",
+  "abe_meta": {
+    "template": "index",
+    "link": "/demo.html",
+    "date": "2016-11-29T20:50:10.964Z",
+    "latest": {
+      "date": "2016-11-29T20:57:06.210Z",
+      "abeUrl": "/demo.html"
+    },
+    "status": "publish",
+    "draft": {
+      "latest": {
+        "date": "2016-11-29T20:50:10.964Z",
+        "abeUrl": "/demo-abe-d20161129T205010964Z.html"
+      },
+      "date": "2016-11-29T20:50:10.964Z",
+      "abeUrl": "/demo-abe-d20161129T205010964Z.html"
+    },
+    "complete": "100",
+    "cleanName": "demo",
+    "cleanFilename": "",
+    "publish": {
+      "latest": {
+        "date": "2016-11-29T20:57:06.210Z",
+        "abeUrl": "/demo.html"
+      },
+      "date": "2016-11-29T20:53:28.362Z",
+      "abeUrl": "/demo.html"
+    }
+  },
+  "abeEditor": "false",
+  "gmaps": [
+    {
+      "address_components": [
+        {
+          "long_name": "Paris",
+          "short_name": "Paris",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Paris",
+          "short_name": "Paris",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Île-de-France",
+          "short_name": "Île-de-France",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "France",
+          "short_name": "FR",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Paris, France",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": "48.9021449",
+            "lng": "2.4699208"
+          },
+          "southwest": {
+            "lat": "48.815573",
+            "lng": "2.224199"
+          }
+        },
+        "location": {
+          "lat": "48.856614",
+          "lng": "2.3522219"
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": "48.9021449",
+            "lng": "2.4699208"
+          },
+          "southwest": {
+            "lat": "48.815573",
+            "lng": "2.225193"
+          }
+        }
+      },
+      "place_id": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+      "types": [
+        "locality",
+        "political"
+      ]
+    },
+    {
+      "address_components": [
+        {
+          "long_name": "Marseille",
+          "short_name": "Marseille",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Bouches-du-Rhone",
+          "short_name": "Bouches-du-Rhone",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Provence-Alpes-Côte d&quote;Azur",
+          "short_name": "Provence-Alpes-Côte d&quote;Azur",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "France",
+          "short_name": "FR",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Marseille, France",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": "43.3911601",
+            "lng": "5.5323519"
+          },
+          "southwest": {
+            "lat": "43.169621",
+            "lng": "5.228641"
+          }
+        },
+        "location": {
+          "lat": "43.296482",
+          "lng": "5.36978"
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": "43.3911601",
+            "lng": "5.5323519"
+          },
+          "southwest": {
+            "lat": "43.169621",
+            "lng": "5.277926100000001"
+          }
+        }
+      },
+      "partial_match": "true",
+      "place_id": "ChIJM1PaREO_yRIRIAKX_aUZCAQ",
+      "types": [
+        "locality",
+        "political"
+      ]
+    },
+    {
+      "address_components": [
+        {
+          "long_name": "London",
+          "short_name": "London",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "London",
+          "short_name": "London",
+          "types": [
+            "postal_town"
+          ]
+        },
+        {
+          "long_name": "Waltham Abbey",
+          "short_name": "Waltham Abbey",
+          "types": [
+            "administrative_area_level_4",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Greater London",
+          "short_name": "Greater London",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "England",
+          "short_name": "England",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United Kingdom",
+          "short_name": "GB",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "London, UK",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": "51.6723432",
+            "lng": "0.148271"
+          },
+          "southwest": {
+            "lat": "51.38494009999999",
+            "lng": "-0.3514683"
+          }
+        },
+        "location": {
+          "lat": "51.5073509",
+          "lng": "-0.1277583"
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": "51.6723432",
+            "lng": "0.148271"
+          },
+          "southwest": {
+            "lat": "51.38494009999999",
+            "lng": "-0.3514683"
+          }
+        }
+      },
+      "place_id": "ChIJdd4hrwug2EcRmSrV3Vo6llI",
+      "types": [
+        "locality",
+        "political"
+      ]
+    }
+  ],
+  "image": "",
+  "text": "",
+  "oldFilePath": "/demo.html",
+  "subtitle": ""
+}
