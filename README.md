@@ -20,7 +20,7 @@ In this demo, you see
 {{abe type='data' key='gmaps' source="https://maps.googleapis.com/maps/api/geocode/json?key=YOURKEY&address=" autocomplete="true" display="{{formatted_address}} - (lat:{{geometry.location.lat}}-lng:{{geometry.location.lng}})" desc='gmaps'}}
 ```
 The Abe type used is a data type. In the source attribute, put the url of Gmaps geocode search with the "address" querystring empty. It will be filled in with your autocomplete data. 
-Add the attribute autocomplete="true" and chose the data extracted from the gmaps json you want to display to the user. In the example above, we illustrate the possibility to add many different fields of the json: {{formatted_address}}, {{geometry.location.lat}} and {{geometry.location.lng}}
+Add the attribute autocomplete="true" and chose the data extracted from the gmaps json you want to display to the user. In the example above, we illustrate the possibility to add different fields: {{formatted_address}}, {{geometry.location.lat}} and {{geometry.location.lng}}
 
 That's all : With this simple Abe tag, your users will enjoy the Google geolocation feature directly from Abe editor!
 The data selected by the user will be saved with the document.
@@ -73,5 +73,5 @@ Finally, we parse each record and create a Marker:
   });
 {{/each}}
 ```	
-That's all (don't forget to put your own key: The key in the sample code only works for localhost request and is limited to your first test ;)
+That's all (don't forget to put your own key: The key in the sample code only works for localhost requests and should be limited to your first test ;)
 
