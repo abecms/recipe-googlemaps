@@ -8,10 +8,10 @@
     "link": "/demo.html",
     "date": "2016-11-30T00:14:04.208Z",
     "latest": {
-      "date": "2016-11-30T00:14:40.373Z",
-      "abeUrl": "/demo.html"
+      "date": "2016-11-30T00:14:37.618Z",
+      "abeUrl": "/demo-abe-d20161130T001437618Z.html"
     },
-    "status": "publish",
+    "status": "draft",
     "draft": {
       "latest": {
         "date": "2016-11-30T00:14:37.618Z",
@@ -22,17 +22,9 @@
     },
     "complete": "100",
     "cleanName": "demo",
-    "cleanFilename": "",
-    "publish": {
-      "latest": {
-        "date": "2016-11-30T00:14:40.373Z",
-        "abeUrl": "/demo.html"
-      },
-      "date": "2016-11-30T00:14:40.373Z",
-      "abeUrl": "/demo.html"
-    }
+    "cleanFilename": ""
   },
-  "abeEditor": "false",
+  "abeEditor": "true",
   "gmaps": [
     {
       "address_components": [

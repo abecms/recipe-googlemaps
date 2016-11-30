@@ -1,0 +1,23 @@
+{
+  "selectTemplate": "index",
+  "name": "demo",
+  "abe_meta": {
+    "template": "index",
+    "link": "/demo.html",
+    "date": "2016-11-30T00:14:04.208Z",
+    "latest": {
+      "date": "2016-11-30T00:14:04.208Z",
+      "abeUrl": "/demo-abe-d20161130T001404208Z.html"
+    },
+    "status": "draft",
+    "draft": {
+      "latest": {
+        "date": "2016-11-30T00:14:04.208Z",
+        "abeUrl": "/demo-abe-d20161130T001404208Z.html"
+      },
+      "date": "2016-11-30T00:14:04.208Z",
+      "abeUrl": "/demo-abe-d20161130T001404208Z.html"
+    },
+    "complete": "100"
+  }
+}
