@@ -1,0 +1,369 @@
+body {
+  border: 0; 
+  margin: 0;
+  color: #fff;
+}
+p {
+  color:  #fff;
+  margin: 0;
+}
+:focus {outline:none;}
+.form-input input {
+  margin: 0;
+}
+.clearfix {
+  clear: both;
+}
+.content {
+  background-color: #515151;
+  width: 809px;
+  margin: 0 auto;
+  padding-bottom: 85px;
+}
+.search-section {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+.search-section h1 {
+  color: #fff;
+  font-size: 36px;
+}
+.search-section p {
+  font-size: 18px;
+}
+.search-section hr {
+  width: 100px;
+  border-top: 1px solid #fff;
+  float: left;
+}
+ul li hr {
+  width: 165px;
+  border-top: 1px solid #fff;
+  margin: 0 auto;
+}
+.search-section .form-control {
+  width: 304px;
+  border-radius: 0px;
+  height: 47px;
+  border: none;
+  margin: 0 !important;
+  padding-left: 43px;
+  background-image: url(../img/search-icon.png);
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+}
+.search-section .submit-btn {
+  height: 47px;
+  border: none;
+  border-radius: 0;
+  background-color: #999999;
+  width: 187px;
+  color: #fff;
+  margin: 0;
+}
+/***** INNER CONTENT *****/
+.inner-content {
+  background: url(../img/corner-marker.png) no-repeat;
+  background-position: top right;
+}
+.inner-content form {
+  height: 47px;
+}
+/* Infowindow Roboto font override */
+.gm-style div,
+.gm-style span,
+.gm-style label,
+.gm-style a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bh-sl-error {
+  clear: both;
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  color: #ae2118;
+  font-weight: bold;
+}
+.bh-sl-container {
+  color: #333333;
+  /* Avoid image issues with Google Maps and CSS resets */
+  /* Avoid issues with Google Maps and CSS frameworks */
+}
+.bh-sl-container img {
+  max-width: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.bh-sl-container > * {
+  box-sizing: content-box !important;
+}
+.bh-sl-container .jumbotron {
+  padding-top: 30px;
+}
+.bh-sl-container .form-input input,
+.bh-sl-container .form-input select,
+.bh-sl-container .form-input label {
+  margin-right: 10px;
+}
+.bh-sl-container .bh-sl-loading {
+  float: left;
+  margin: 4px 0 0 10px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/ajax-loader.gif) no-repeat;
+}
+.bh-sl-container .bh-sl-filters-container {
+  clear: both;
+  width: 100%;
+  margin: 15px 0;
+}
+.bh-sl-container .bh-sl-filters-container .bh-sl-filters {
+  list-style: none;
+  float: left;
+  padding: 0;
+  margin: 0 100px 0 0;
+}
+.bh-sl-container .bh-sl-filters-container .bh-sl-filters li {
+  display: block;
+  clear: left;
+  float: left;
+  width: 100%;
+  margin: 5px 0;
+}
+.bh-sl-container .bh-sl-filters-container .bh-sl-filters li label {
+  display: inline;
+}
+.bh-sl-container .bh-sl-filters-container .bh-sl-filters li input {
+  display: block;
+  float: left;
+  margin: 2px 8px 2px 0;
+}
+.bh-sl-container .bh-sl-map-container {
+  width: 88%;
+  margin: 27px auto 0;
+}
+.bh-sl-container .bh-sl-map-container a {
+  color: #005293;
+  text-decoration: none;
+}
+.bh-sl-container .bh-sl-map-container a:hover,
+.bh-sl-container .bh-sl-map-container a:active {
+  text-decoration: underline;
+}
+.bh-sl-container .bh-sl-loc-list {
+  height: 399px;
+  overflow-x: auto;
+  font-size: 13px;
+  width: 34%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.up {
+  background-color: #999999;
+  text-align: center;
+  z-index: 99;
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  -moz-transform: rotate(180deg); /* Firefox */
+  transform: rotate(180deg);
+  top: 0;
+}
+.down {
+  background-color: #999999;
+  text-align: center;
+  z-index: 99;
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+}
+.bh-sl-container .bh-sl-loc-list ul {
+  display: block;
+  clear: left;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: -15px;
+  height: 399px;
+  overflow: auto;
+}
+.bh-sl-container .bh-sl-loc-list ul li {
+  display: block;
+  clear: left;
+  float: left;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  color: #fff;
+  background-color: #999999 !important;
+ 
+  /* Adding this to prevent moving li elements when adding the list-focus class*/
+}
+.bh-sl-container .bh-sl-loc-list .list-label {
+  float: left;
+  margin: 10px 0 0 6px;
+  padding: 4px;
+  width: 27px;
+  text-align: center;
+  background: #00192d;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 15px;
+  display: none;
+}
+.bh-sl-container .bh-sl-loc-list .list-details {
+  float: left;
+  margin-left: 6px;
+  padding: 30px 0 35px;
+}
+.bh-sl-container .bh-sl-loc-list .list-details .list-content {
+  padding: 10px 0 0 20px;
+  font-size: 14px;
+}
+.bh-sl-container .bh-sl-loc-list .list-details .loc-dist {
+  float: right;
+  font-style: italic;
+}
+.bh-sl-container .bh-sl-loc-list .list-focus {
+  border: 1px solid rgba(0, 82, 147, 0.4);
+  -moz-box-shadow: 0 0 8px rgba(0, 82, 147, 0.4);
+  -webkit-box-shadow: 0 0 8px rgba(0, 82, 147, 0.4);
+  box-shadow: 0 0 8px rgba(0, 100, 180, 0.4);
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+.bh-sl-container .bh-sl-loc-list .bh-sl-close-directions-container {
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+.bh-sl-container .bh-sl-loc-list .bh-sl-close-directions-container .bh-sl-close-icon {
+  top: 0;
+  right: 6px;
+}
+.bh-sl-container .bh-sl-loc-list .bh-sl-noresults-title {
+  font-weight: bold;
+}
+.bh-sl-container .loc-name {
+  /* Picked up by both list and infowindows */
+  text-transform: uppercase;
+}
+.bh-sl-container .loc-addr3 {
+  text-transform: uppercase;
+}
+.bh-sl-container .bh-sl-map {
+  height: 399px;
+  width: 66%;
+}
+.map-direction {
+  color: #fff !important;
+  float: right;
+  text-decoration: underline !important;
+}
+.map-direction:hover {
+  color: #999999;
+}
+.bh-sl-container .bh-sl-pagination-container {
+  clear: both;
+}
+.bh-sl-container .bh-sl-pagination-container ol {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+.bh-sl-container .bh-sl-pagination-container ol li {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  font: bold 14px Arial, Helvetica, sans-serif;
+  color: #005293;
+}
+.bh-sl-container .bh-sl-pagination-container ol .bh-sl-current {
+  color: #333333;
+  cursor: auto;
+  text-decoration: none;
+}
+/* Modal window */
+.bh-sl-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background: url(../img/overlay-bg.png) repeat;
+}
+.bh-sl-overlay .bh-sl-modal-window {
+  position: absolute;
+  left: 50%;
+  margin-left: -460px;
+  /* width divided by 2 */
+  margin-top: 60px;
+  width: 920px;
+  height: 620px;
+  z-index: 10010;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #656565;
+}
+.bh-sl-overlay .bh-sl-modal-window .bh-sl-map-container {
+  margin-top: 50px;
+  /* increase map container margin */
+}
+.bh-sl-overlay .bh-sl-modal-window .bh-sl-modal-content {
+  float: left;
+  padding: 0 22px;
+  /* there's already a margin on the top of the map-container div */
+}
+.bh-sl-overlay .bh-sl-modal-window .bh-sl-close-icon {
+  top: 13px;
+  right: 22px;
+}
+.bh-sl-close-icon {
+  position: absolute;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+.bh-sl-close-icon:after,
+.bh-sl-close-icon:before {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 0;
+  left: 50%;
+  background: #cccccc;
+  content: '';
+  display: block;
+  height: 24px;
+  margin: -3px 0 0 -1px;
+  width: 3px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.bh-sl-close-icon:hover:after,
+.bh-sl-close-icon:hover:before {
+  background: #b3b3b3;
+}
+.bh-sl-close-icon:before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}

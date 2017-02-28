@@ -1,0 +1,123 @@
+
+{{abe type='data' key='stores' source='reference/stores.json' editable='false'}}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>storelocator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1280px">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+  <div class="content">
+    <div class="bh-sl-container inner-content">
+      <div class="search-section">
+        <h1>SEARCH</h1>
+        <p>A STORE NEAR YOU (try "Edina" or "Minneapolis")</p>
+        <hr>
+        <div class="clearfix">
+          <form id="bh-sl-user-location" class="form-inline" method="post" action="#" role="form">
+            <div class="form-input form-group">
+              <input class="form-control" type="text" id="bh-sl-address" name="bh-sl-address" placeholder="CITY, ZIPCODE OR ADDRESS" />
+            </div>
+            <button id="bh-sl-submit" class="submit-btn" type="submit">SEARCH</button>
+          </form>
+        </div>
+      </div>
+      <div id="bh-sl-map-container" class="bh-sl-map-container">
+        <div id="map-results-container" class="">
+          <div class="bh-sl-loc-list">
+            <div class="up" style="display:none;"></div>
+            <ul class="list-group" style="padding-right: 30px;">
+              <li style="    padding: 20px;text-align: justify;display: block;background: rgb(255, 255, 255);width: 242px;line-height: 16px;">Please select a city, a zipcode or an address to see stores near you.
+              </li>
+            </ul>
+            <div class="down" style="display:none;"></div>
+          </div>
+          <div id="bh-sl-map" class="bh-sl-map"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="infoTemplate" style="display:none">
+  {{{{raw}}}}
+  {{#location}}
+    {{name}}
+    {{address}}
+    {{address2}}
+    {{city}}{{#if city}},{{/if}} {{state}} {{postal}}
+    {{hours1}}{{hours2}}{{hours3}}
+    {{phone}}
+    {{niceURL web}}
+  {{/location}}
+  {{{{/raw}}}}
+  </div>
+
+  <div id="listTemplate" style="display:none">
+  {{{{raw}}}}
+  {{#location}}
+    <li data-markerid="{{markerid}}">
+      <div class="list-label">{{marker}}</div>
+      <div class="list-details">
+        <div class="list-content">
+          <div class="loc-name">{{name}}</div>
+          <div class="loc-addr">{{address}}</div>
+          <div class="loc-addr2">{{address2}}</div>
+          <div class="loc-addr3">{{city}}{{#if city}},{{/if}} {{state}} {{postal}}</div>
+          <div class="loc-phone">{{phone}}</div>
+          <div class="loc-web"><a href="{{web}}" target="_blank">{{niceURL web}}</a></div>
+          {{#if distance}}
+            <div class="loc-dist">{{distance}} {{length}}</div>
+            <div class="loc-directions">
+              <a href="https://maps.google.com/maps?saddr={{origin}}&amp;daddr={{address}} {{address2}} {{city}}, {{state}} {{postal}}" target="_blank" style="color: lightskyblue">Directions</a>
+            </div>
+          {{/if}}
+        </div>
+      </div>
+      <hr>
+    </li>
+  {{/location}}
+  {{{{/raw}}}}
+</div>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="/js/handlebars-v4.0.5.js"></script>
+  <script src="https://maps.google.com/maps/api/js?key=AIzaSyCo_h54Rp4-1ygvmTSWgebLYz6hlcjLO7w&region=FRANCE"></script>
+  <script src="/js/jquery.storelocator.js"></script>
+  <script src="/js/jquery.tinycarousel.js"></script>
+  <script>//var jsonData = {{stores}}</script>
+  <script>//console.log({{stores}})</script>
+  <script>
+    $(function() {
+      $('#bh-sl-map-container').storeLocator({
+        debug                      : false,
+        fullMapStart               : true,
+        mapSettings : {
+          zoom                   : 5,
+          mapTypeId              : google.maps.MapTypeId.ROADMAP,
+          disableDoubleClickZoom : true,
+          scrollwheel            : false,
+          navigationControl      : false,
+          draggable              : true
+        },
+        lengthUnit               : 'km',
+        storeLimit               : 5,
+        // Data
+        dataType                 : 'json',
+        dataLocation             : 'https://raw.githubusercontent.com/bjorn2404/jQuery-Store-Locator-Plugin/master/dist/data/locations.json',
+        //dataLocation           : '/stores.html',
+        //dataRaw                : jsonData,
+        infowindowTemplateID     : 'infoTemplate',
+        listTemplateID           : 'listTemplate',
+        distanceAlert            : -1
+      });
+    });
+  </script>
+</body>
+</html>

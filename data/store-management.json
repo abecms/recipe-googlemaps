@@ -1,0 +1,307 @@
+{
+  "name": "store management",
+  "stores": [
+    {
+      "name": "Paris store",
+      "website": "website2",
+      "hours1": "",
+      "hours2": "",
+      "hours3": "09:30AM - 06:00PM",
+      "lat": "",
+      "lng": "",
+      "address": "",
+      "address2": "",
+      "city": "",
+      "state": "",
+      "zipcode": "",
+      "phone": "999999",
+      "gmaps": [
+        {
+          "address_components": [
+            {
+              "long_name": "Paris",
+              "short_name": "Paris",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Paris",
+              "short_name": "Paris",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Île-de-France",
+              "short_name": "Île-de-France",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "France",
+              "short_name": "FR",
+              "types": [
+                "country",
+                "political"
+              ]
+            }
+          ],
+          "formatted_address": "Paris, France",
+          "geometry": {
+            "bounds": {
+              "northeast": {
+                "lat": "48.9021449",
+                "lng": "2.4699208"
+              },
+              "southwest": {
+                "lat": "48.815573",
+                "lng": "2.224199"
+              }
+            },
+            "location": {
+              "lat": "48.856614",
+              "lng": "2.3522219"
+            },
+            "location_type": "APPROXIMATE",
+            "viewport": {
+              "northeast": {
+                "lat": "48.9021449",
+                "lng": "2.4699208"
+              },
+              "southwest": {
+                "lat": "48.815573",
+                "lng": "2.225193"
+              }
+            }
+          },
+          "place_id": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+          "types": [
+            "locality",
+            "political"
+          ]
+        }
+      ],
+      "index": "1",
+      "total": "3",
+      "isFirst": "true",
+      "isLast": "false"
+    },
+    {
+      "website": "website",
+      "hours1": "heure1",
+      "hours2": "heure2",
+      "hours3": "09:00AM - 05:00PM",
+      "lat": "",
+      "lng": "",
+      "address": "",
+      "address2": "",
+      "city": "",
+      "state": "",
+      "zipcode": "",
+      "phone": "09878787888",
+      "name": "Lyon store",
+      "gmaps": [
+        {
+          "address_components": [
+            {
+              "long_name": "Lyon",
+              "short_name": "Lyon",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Rhône",
+              "short_name": "Rhône",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Auvergne-Rhône-Alpes",
+              "short_name": "Auvergne-Rhône-Alpes",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "France",
+              "short_name": "FR",
+              "types": [
+                "country",
+                "political"
+              ]
+            }
+          ],
+          "formatted_address": "Lyon, France",
+          "geometry": {
+            "bounds": {
+              "northeast": {
+                "lat": "45.808425",
+                "lng": "4.898393"
+              },
+              "southwest": {
+                "lat": "45.707486",
+                "lng": "4.7718489"
+              }
+            },
+            "location": {
+              "lat": "45.764043",
+              "lng": "4.835659"
+            },
+            "location_type": "APPROXIMATE",
+            "viewport": {
+              "northeast": {
+                "lat": "45.808425",
+                "lng": "4.898393"
+              },
+              "southwest": {
+                "lat": "45.707486",
+                "lng": "4.7718489"
+              }
+            }
+          },
+          "place_id": "ChIJl4foalHq9EcR8CG75CqrCAQ",
+          "types": [
+            "locality",
+            "political"
+          ]
+        }
+      ],
+      "index": "2",
+      "total": "3",
+      "isFirst": "false",
+      "isLast": "false",
+      "undefined": ""
+    },
+    {
+      "gmaps": [
+        {
+          "address_components": [
+            {
+              "long_name": "Toulouse",
+              "short_name": "Toulouse",
+              "types": [
+                "locality",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Haute-Garonne",
+              "short_name": "Haute-Garonne",
+              "types": [
+                "administrative_area_level_2",
+                "political"
+              ]
+            },
+            {
+              "long_name": "Occitanie",
+              "short_name": "Occitanie",
+              "types": [
+                "administrative_area_level_1",
+                "political"
+              ]
+            },
+            {
+              "long_name": "France",
+              "short_name": "FR",
+              "types": [
+                "country",
+                "political"
+              ]
+            }
+          ],
+          "formatted_address": "Toulouse, France",
+          "geometry": {
+            "bounds": {
+              "northeast": {
+                "lat": "43.6686919",
+                "lng": "1.515354"
+              },
+              "southwest": {
+                "lat": "43.532708",
+                "lng": "1.350328"
+              }
+            },
+            "location": {
+              "lat": "43.604652",
+              "lng": "1.444209"
+            },
+            "location_type": "APPROXIMATE",
+            "viewport": {
+              "northeast": {
+                "lat": "43.6686919",
+                "lng": "1.515354"
+              },
+              "southwest": {
+                "lat": "43.532708",
+                "lng": "1.350328"
+              }
+            }
+          },
+          "place_id": "ChIJ_1J17G-7rhIRMBBBL5z2BgQ",
+          "types": [
+            "locality",
+            "political"
+          ]
+        }
+      ],
+      "phone": "",
+      "website": "http://www.google.com",
+      "hours1": "",
+      "hours2": "",
+      "hours3": "",
+      "name": "Toulouse store",
+      "lat": "",
+      "lng": "",
+      "address": "",
+      "address2": "",
+      "city": "",
+      "state": "",
+      "zipcode": "",
+      "index": "3",
+      "total": "3",
+      "isFirst": "false",
+      "isLast": "true",
+      "undefined": ""
+    }
+  ],
+  "oldFilePath": "/store-management.html",
+  "abe_meta": {
+    "template": "store",
+    "link": "/store-management.html",
+    "date": "2017-02-28T07:44:43.238Z",
+    "latest": {
+      "date": "2017-02-28T07:46:09.430Z",
+      "abeUrl": "/store-management.html"
+    },
+    "status": "publish",
+    "draft": {
+      "latest": {
+        "date": "2017-02-28T07:44:43.238Z",
+        "abeUrl": "/store-management-abe-d20170228T074443238Z.html"
+      },
+      "date": "2017-02-28T07:44:43.238Z",
+      "abeUrl": "/store-management-abe-d20170228T074443238Z.html"
+    },
+    "complete": "100",
+    "cleanName": "store-management",
+    "cleanFilename": "",
+    "publish": {
+      "latest": {
+        "date": "2017-02-28T07:46:09.430Z",
+        "abeUrl": "/store-management.html"
+      },
+      "date": "2017-02-28T07:46:09.430Z",
+      "abeUrl": "/store-management.html"
+    }
+  }
+}

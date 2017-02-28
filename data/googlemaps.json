@@ -2,29 +2,7 @@
   "selectTemplate": [
     "index"
   ],
-  "name": "demo",
-  "abe_meta": {
-    "template": "index",
-    "link": "/demo.html",
-    "date": "2016-11-30T00:14:04.208Z",
-    "latest": {
-      "date": "2016-11-30T00:14:37.618Z",
-      "abeUrl": "/demo-abe-d20161130T001437618Z.html"
-    },
-    "status": "draft",
-    "draft": {
-      "latest": {
-        "date": "2016-11-30T00:14:37.618Z",
-        "abeUrl": "/demo-abe-d20161130T001437618Z.html"
-      },
-      "date": "2016-11-30T00:14:04.208Z",
-      "abeUrl": "/demo-abe-d20161130T001404208Z.html"
-    },
-    "complete": "100",
-    "cleanName": "demo",
-    "cleanFilename": ""
-  },
-  "abeEditor": "true",
+  "name": "googlemaps",
   "gmaps": [
     {
       "address_components": [
@@ -91,7 +69,11 @@
       "types": [
         "colloquial_area",
         "political"
-      ]
+      ],
+      "index": "1",
+      "total": "4",
+      "isFirst": "true",
+      "isLast": "false"
     },
     {
       "address_components": [
@@ -152,7 +134,11 @@
       "types": [
         "locality",
         "political"
-      ]
+      ],
+      "index": "2",
+      "total": "4",
+      "isFirst": "false",
+      "isLast": "false"
     },
     {
       "address_components": [
@@ -222,8 +208,121 @@
       "types": [
         "locality",
         "political"
-      ]
+      ],
+      "index": "3",
+      "total": "4",
+      "isFirst": "false",
+      "isLast": "false"
+    },
+    {
+      "address_components": [
+        {
+          "long_name": "Londres",
+          "short_name": "Londres",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Londres",
+          "short_name": "Londres",
+          "types": [
+            "postal_town"
+          ]
+        },
+        {
+          "long_name": "Grand Londres",
+          "short_name": "Grand Londres",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Angleterre",
+          "short_name": "Angleterre",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Royaume-Uni",
+          "short_name": "GB",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Londres, Royaume-Uni",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": "51.6723432",
+            "lng": "0.148271"
+          },
+          "southwest": {
+            "lat": "51.38494009999999",
+            "lng": "-0.3514683"
+          }
+        },
+        "location": {
+          "lat": "51.5073509",
+          "lng": "-0.1277583"
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": "51.6723432",
+            "lng": "0.148271"
+          },
+          "southwest": {
+            "lat": "51.38494009999999",
+            "lng": "-0.3514683"
+          }
+        }
+      },
+      "place_id": "ChIJdd4hrwug2EcRmSrV3Vo6llI",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "index": "4",
+      "total": "4",
+      "isFirst": "false",
+      "isLast": "true"
     }
   ],
-  "oldFilePath": "/demo.html"
+  "oldFilePath": "/googlemaps.html",
+  "abe_meta": {
+    "template": "index",
+    "link": "/googlemaps.html",
+    "date": "2017-02-28T07:40:28.225Z",
+    "latest": {
+      "date": "2017-02-28T07:45:57.520Z",
+      "abeUrl": "/googlemaps.html"
+    },
+    "status": "publish",
+    "draft": {
+      "latest": {
+        "date": "2017-02-28T07:40:28.225Z",
+        "abeUrl": "/googlemaps-abe-d20170228T074028225Z.html"
+      },
+      "date": "2017-02-28T07:40:28.225Z",
+      "abeUrl": "/googlemaps-abe-d20170228T074028225Z.html"
+    },
+    "complete": "100",
+    "cleanName": "googlemaps",
+    "cleanFilename": "",
+    "publish": {
+      "latest": {
+        "date": "2017-02-28T07:45:57.520Z",
+        "abeUrl": "/googlemaps.html"
+      },
+      "date": "2017-02-28T07:45:57.520Z",
+      "abeUrl": "/googlemaps.html"
+    }
+  }
 }

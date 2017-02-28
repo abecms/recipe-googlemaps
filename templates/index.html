@@ -25,7 +25,7 @@
 	          	{{gmaps.0.geometry.location.lng}}
 	          )
 	        });
-	        {{#each gmaps}}
+	        {{#forEach gmaps}}
 	        new google.maps.Marker({
 	          position: new google.maps.LatLng(
 	          	{{geometry.location.lat}},
@@ -33,7 +33,7 @@
 	          ),
 	          map: map
 	        });
-	        {{/each}}
+	        {{/forEach}}
 	      }
 	    </script>
 	    <script async defer

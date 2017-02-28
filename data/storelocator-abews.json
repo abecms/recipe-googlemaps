@@ -1,0 +1,38 @@
+{
+  "selectTemplate": [
+    "storelocator-abews"
+  ],
+  "name": "storelocator-abews",
+  "null": "BjFrpMeH-bngpaoQ1NfLFsVpfWVZMEhyrjQQ",
+  "abe_meta": {
+    "template": "storelocator-abews",
+    "link": "/storelocator-abews.html",
+    "date": "2016-12-29T08:35:13.325Z",
+    "latest": {
+      "date": "2016-12-29T08:35:30.211Z",
+      "abeUrl": "/storelocator-abews.html"
+    },
+    "status": "publish",
+    "draft": {
+      "latest": {
+        "date": "2016-12-29T08:35:13.325Z",
+        "abeUrl": "/storelocator-abews-abe-d20161229T083513325Z.html"
+      },
+      "date": "2016-12-29T08:35:13.325Z",
+      "abeUrl": "/storelocator-abews-abe-d20161229T083513325Z.html"
+    },
+    "complete": "100",
+    "cleanName": "storelocator-abews",
+    "cleanFilename": "",
+    "publish": {
+      "latest": {
+        "date": "2016-12-29T08:35:30.211Z",
+        "abeUrl": "/storelocator-abews.html"
+      },
+      "date": "2016-12-29T08:35:30.211Z",
+      "abeUrl": "/storelocator-abews.html"
+    }
+  },
+  "abeEditor": "false",
+  "oldFilePath": "/storelocator-abews.html"
+}

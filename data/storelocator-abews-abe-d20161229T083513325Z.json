@@ -1,0 +1,24 @@
+{
+  "selectTemplate": "storelocator-abews",
+  "name": "storelocator-abews",
+  "null": "BjFrpMeH-bngpaoQ1NfLFsVpfWVZMEhyrjQQ",
+  "abe_meta": {
+    "template": "storelocator-abews",
+    "link": "/storelocator-abews.html",
+    "date": "2016-12-29T08:35:13.325Z",
+    "latest": {
+      "date": "2016-12-29T08:35:13.325Z",
+      "abeUrl": "/storelocator-abews-abe-d20161229T083513325Z.html"
+    },
+    "status": "draft",
+    "draft": {
+      "latest": {
+        "date": "2016-12-29T08:35:13.325Z",
+        "abeUrl": "/storelocator-abews-abe-d20161229T083513325Z.html"
+      },
+      "date": "2016-12-29T08:35:13.325Z",
+      "abeUrl": "/storelocator-abews-abe-d20161229T083513325Z.html"
+    },
+    "complete": "100"
+  }
+}

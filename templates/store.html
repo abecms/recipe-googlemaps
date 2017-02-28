@@ -1,0 +1,70 @@
+{{#if abeEditor}}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Abe recipe:Google Maps</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+</head>
+<body>
+  <pre>
+{{/if}}
+[
+{{#each stores}}
+  {{abe type='data' key='stores.gmaps' source="https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCo_h54Rp4-1ygvmTSWgebLYz6hlcjLO7w&address=" autocomplete="true" display="{{formatted_address}} - (lat:{{geometry.location.lat}}-lng:{{geometry.location.lng}})" desc='gmaps' max-length="1"}}
+  {
+
+    "id": "{{gmaps.0.formatted_address}}",
+    "name": "{{abe type="text" key="stores.name" desc="name"}}",
+    "lat": "{{gmaps.0.geometry.location.lat}}",
+    "lng": "{{gmaps.0.geometry.location.lng}}",
+    "address": "{{gmaps.0.formatted_address}}",
+    "address2": "{{abe type="text" key="stores.address2" desc="address2"}}",
+    "city": "{{abe type="text" key="stores.city" desc="city"}}",
+    "state": "{{abe type="text" key="stores.state" desc="state"}}",
+    "postal": "{{abe type="text" key="stores.zipcode" desc="zipcode"}}",
+    "phone": "{{abe type="text" key="stores.phone" desc="phone"}}",
+    "web": "{{abe type="text" key="stores.website" desc="website"}}",
+    "hours1": "{{abe type="text" key="stores.hours1" desc="hours1"}}",
+    "hours2": "{{abe type="text" key="stores.hours2" desc="hours2"}}",
+    "hours3": "{{abe type="text" key="stores.hours3" desc="hours3"}}"
+  }{{#if (isTrue @index '!=' (add ../stores.length -1))}},{{/if}}
+{{/each}}
+]
+{{#if abeEditor}}
+  </pre>
+  <div id="map"></div>
+  {{#if stores.0.gmaps.0.formatted_address}}
+  <script>
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: new google.maps.LatLng(
+          {{stores.0.gmaps.0.geometry.location.lat}},
+          {{stores.0.gmaps.0.geometry.location.lng}}
+        )
+      });
+      {{#forEach stores}}
+      new google.maps.Marker({
+        position: new google.maps.LatLng(
+          {{gmaps.0.geometry.location.lat}},
+          {{gmaps.0.geometry.location.lng}}
+        ),
+        map: map
+      });
+      {{/forEach}}
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTt9cVaCpNoJHXiFibB9t4Kk1xWzMkjOk&callback=initMap">
+  </script>
+  {{/if}}
+</body>
+</html>
+{{/if}}
