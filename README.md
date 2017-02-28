@@ -11,11 +11,14 @@ This Abe recipe demonstrates how to add a Google Maps field to your template and
 5. Enjoy !
 
 # Description
-In this demo, you see 
-- a Google Maps autocomplete field in the editor
-- a Google Map filled with geolocations in the template
+In this demo, you'll see 4 recipes:
+1. GoogleMaps - a Google Maps autocomplete field in the editor + a Google Map filled with geolocations in the template
+2. Storelocator ws - A storelocator grabbing data in json format from a remote server
+3. Store management - How to create and maintain a stores json file from Abe
+4. Storelocator ws - The storelocator now uses your stores file created in the previous recipe
 
-# The autocomplete field
+# Google Maps
+## The autocomplete field
 ``` 
 {{abe type='data' key='gmaps' source="https://maps.googleapis.com/maps/api/geocode/json?key=YOURKEY&address=" autocomplete="true" display="{{formatted_address}} - (lat:{{geometry.location.lat}}-lng:{{geometry.location.lng}})" desc='gmaps'}}
 ```
@@ -25,7 +28,7 @@ Add the attribute autocomplete="true" and chose the data extracted from the gmap
 That's all : With this simple Abe tag, your users will enjoy the Google geolocation feature directly from Abe editor!
 The data selected by the user will be saved with the document.
 
-# Display a Google Map in the template
+## Display a Google Map in the template
 The code sample :
 ```
 <div id="map"></div>
@@ -74,4 +77,21 @@ Finally, we parse each record and create a Marker:
 {{/each}}
 ```	
 That's all (don't forget to put your own key: The key in the sample code only works for localhost requests and should be limited to your first test ;)
+
+# Storelocator WS
+
+# Store management (template : store.html)
+
+## Description
+using the variable ```abeEditor``` you can know if you display your template in the editor or not. We use this variable here to present properly (in HTML) our json to the contributor. Once the contributor publish her stores, it will be published as a json file (for now, the extension of the file remains .html but its content is a pure json).
+This set of stores is easily maintained by your contributors: During the creation of a store, we show you how it's possible to use a ws (GoogleMaps) to search for a location, and add additional fields to your store (open hours, image, whatever...)
+
+# Storelocator WS with store.html
+
+## Description
+This time, the storelocator uses data from your own stores file. Just change the source of the data:
+
+```
+dataLocation           : '/store-management.html'
+```
 
