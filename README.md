@@ -18,6 +18,9 @@ In this demo, you'll see 4 recipes:
 4. Storelocator ws - The storelocator now uses your stores file created in the previous recipe
 
 # Google Maps
+
+![Screenshot](/site/screenshot.png?raw=true)
+
 ## The autocomplete field
 ``` 
 {{abe type='data' key='gmaps' source="https://maps.googleapis.com/maps/api/geocode/json?key=YOURKEY&address=" autocomplete="true" display="{{formatted_address}} - (lat:{{geometry.location.lat}}-lng:{{geometry.location.lng}})" desc='gmaps'}}
@@ -80,13 +83,19 @@ That's all (don't forget to put your own key: The key in the sample code only wo
 
 # Storelocator WS
 
+![Screenshot](/site/screenshot2.png?raw=true)
+
 # Store management (template : store.html)
+
+![Screenshot](/site/screenshot3.png?raw=true)
 
 ## Description
 using the variable ```abeEditor``` you can know if you display your template in the editor or not. We use this variable here to present properly (in HTML) our json to the contributor. Once the contributor publish her stores, it will be published as a json file (for now, the extension of the file remains .html but its content is a pure json).
 This set of stores is easily maintained by your contributors: During the creation of a store, we show you how it's possible to use a ws (GoogleMaps) to search for a location, and add additional fields to your store (open hours, image, whatever...)
 
 # Storelocator WS with store.html
+
+![Screenshot](/site/screenshot4.png?raw=true)
 
 ## Description
 This time, the storelocator uses data from your own stores file. Just change the source of the data:
